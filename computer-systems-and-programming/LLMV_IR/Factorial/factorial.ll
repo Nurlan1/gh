@@ -1,10 +1,13 @@
-define i32 @main(){
-    entry:
+
         
-        @n= i32 5
-        @f=i32 1
-        @i= i32 1
+define i32 @main(){
+	
+    entry:
+	%n = i32 5
+	%f = i32 1
+	%i = global i32 1
         br label %factorial
+        
     factorial:
         @f=mul @f, @i
         @i = add i32 @i,1
