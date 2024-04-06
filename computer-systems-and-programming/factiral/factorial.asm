@@ -2,7 +2,7 @@ global  _main
 extern  _printf
 
 section .data
-    arraySize dd 5
+    n dd 5
     resultMessage db 'The result is: %d', 10, 0 
 section .text
 _main:
@@ -10,7 +10,7 @@ _main:
     xor eax,eax
     mov eax,1
     mov ebx,1
-    mov edx, [arraySize]
+    mov edx, [n]
 loop1:
     imul eax,ebx
     add ebx,1
