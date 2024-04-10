@@ -7,6 +7,7 @@ class moveZeroes{
                  index++;
             }
            
+           
             
         }
         while(index<nums.length){
