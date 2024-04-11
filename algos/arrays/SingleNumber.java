@@ -4,6 +4,7 @@ class Solution {
         for( int i : nums){
             res=res^i;
         }
-        return res;
+        return res; 
+        
     }
 }
